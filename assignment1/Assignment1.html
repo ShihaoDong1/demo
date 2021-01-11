@@ -4,19 +4,139 @@
 <head>
     <title>Assignment 1</title>
     <style type="text/css">
-        h1 {
-            color: blue
+        body {
+            font-size: 20px;
+            margin: 0px;
         }
+
+        h1 {
+            color: blue;
+            font-family: sans-serif;
+        }
+
+        .top-nav {
+            color: white;
+            position: relative;
+            background-color: rgb(25, 0, 255);
+            font-family: sans-serif;
+            padding-left: 10px;
+        }
+
+        .nav-item {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .nav-item a {
+            cursor: pointer;
+            color: white;
+        }
+
+        .nav-item .dropdown {
+            display: none;
+        }
+
+        .nav-item:hover .dropdown {
+            display: block;
+            position: absolute;
+            background-color: blue;
+            top: 42px;
+            min-width: 150px;
+        }
+
+        .dropdown-item {
+            position: relative;
+            padding: .3em;
+            cursor: pointer;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgb(11, 11, 97);
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 1000px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        .side-nav-icon {
+            cursor: pointer;
+        }
+
+        .side-nav {
+            color: white;
+            position: absolute;
+            background-color: rgb(25, 0, 255);
+            font-family: sans-serif;
+            height: 100%;
+            min-width: 150px;
+            max-width: 250px;
+            padding-left: 10px;
+            display: none;
+        }
+
+        .side-nav-item {
+            position: relative;
+            padding: .4em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .side-nav-close-bottom {
+            position: absolute;
+            right: 0;
+            font-size: larger;
+        }
+
+        .side-nav-icon:hover .side-nav {
+            display: block;
+        }
+
+        /* .side-nav-close-bottom:active .side-nav {
+            display: none;
+        } */
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body>
-    <nav>
-        <div>Shihao's Site</div>
-        <div>Home</div>
-        <div>
-            <a href=#>Assignment</a>
+    <nav class="top-nav">
+        <div class="nav-item side-nav-icon">
+            <a href="#"></a> <i class="fas fa-bars"> </i>
         </div>
+        <div class="nav-item page-name">Shihao's Site</div>
+        <div class="nav-item"><a href="Assignment1.html">Home</a></div>
+        <div class="nav-item">
+            <a href="#">Assignments</a>
+            <div class="dropdown">
+                <div class="dropdown-item"><a href="demo.html">Demo</a></div>
+                <div class="dropdown-item"><a href="Assignment1.html">Assignment 1</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="side-nav">
+        <div class="side-nav-item side-nav-close-bottom">X</div>
+        <br>
+        <div class="side-nav-item">Home</div>
+        <div class="side-nav-item">Assignments</div>
     </nav>
 
     <div class="container">
@@ -97,37 +217,25 @@
                 <tr>
                     <td>1.A</td>
                     <td>What did you like this week? </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="4"></td>
                 </tr>
 
                 <tr>
                     <td>1.B</td>
                     <td>What didn't you like this week?</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="4"></td>
                 </tr>
 
                 <tr>
                     <td>1.C</td>
                     <td>How can we improve the material from this week?</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="4"></td>
                 </tr>
 
                 <tr>
                     <td>1.D*</td>
                     <td>Show us anything else you coded up this week!</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="4"></td>
                 </tr>
 
 
