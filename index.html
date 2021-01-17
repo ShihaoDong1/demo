@@ -2,31 +2,250 @@
 <html>
 
 <head>
-    <title>Shihao's Website</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Assignment 1</title>
+    <style type="text/css">
+        body {
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        h1 {
+            color: blue;
+            font-family: sans-serif;
+        }
+
+        .top-nav {
+            color: white;
+            position: relative;
+            background-color: rgb(25, 0, 255);
+            font-family: sans-serif;
+            padding-left: 10px;
+        }
+
+        .nav-item {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .nav-item a {
+            cursor: pointer;
+            color: white;
+        }
+
+        .nav-item .dropdown {
+            display: none;
+        }
+
+        .nav-item:hover .dropdown {
+            display: block;
+            position: absolute;
+            background-color: blue;
+            top: 42px;
+            min-width: 150px;
+        }
+
+        .dropdown-item {
+            position: relative;
+            padding: .3em;
+            cursor: pointer;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgb(11, 11, 97);
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 1000px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        .side-nav-icon {
+            cursor: pointer;
+        }
+
+        .side-nav {
+            color: white;
+            position: absolute;
+            background-color: rgb(25, 0, 255);
+            font-family: sans-serif;
+            height: 100%;
+            min-width: 150px;
+            max-width: 250px;
+            padding-left: 10px;
+            display: none;
+        }
+
+        .side-nav-item {
+            position: relative;
+            padding: .4em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .side-nav-close-bottom {
+            position: absolute;
+            right: 0;
+            font-size: larger;
+        }
+
+        .side-nav-icon:hover .side-nav {
+            display: block;
+        }
+
+        .side-nav-close-bottom:active .side-nav {
+            display: none;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body>
+    <nav class="top-nav">
+        <div class="nav-item side-nav-icon">
+            <a href="#"></a> <i class="fas fa-bars"> </i>
+        </div>
+        <div class="nav-item page-name">Shihao's Site</div>
+        <div class="nav-item"><a href="index.html">Home</a></div>
+        <div class="nav-item">
+            <a href="#">Assignments</a>
+            <div class="dropdown">
+                <div class="dropdown-item"><a href="assignment1/demo.html">Demo</a></div>
+                <div class="dropdown-item"><a href="assignment1/Assignment1.html">Assignment 1</a></div>
+            </div>
+        </div>
+    </nav>
 
-    <h1> Hello World!!! </h1>
+    <nav class="side-nav">
+        <div class="side-nav-item side-nav-close-bottom">X</div>
+        <br>
+        <div class="side-nav-item">Home</div>
+        <div class="side-nav-item">Assignments</div>
+    </nav>
 
-    <p>This is a <a href="second.html">Second page</a></p>
-    <p>This is a <a href="assignment1/Assignment1.html">Assignment 1</a></p>
+    <div class="container">
+        <h1> Shihao's Assignment 1 </h1>
 
-    <h2>This is the second header</h2>
+        <p>Full-Stack App Development 2021</p>
+        <ul>
+            <li>Difficulty: 1 = no problem at all, 5 = could not do</li>
+            <li>Usefulness: 1 = not a good use of time, 5 = very useful</li>
+        </ul>
 
-    <p>Paragraph 1</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</td>
+                    <th>Assignment</th>
+                    <th>Submission</th>
+                    <th>Time (hours)</th>
+                    <th>Difficult (1-5)</th>
+                    <th>Useful (1-5)</th>
+                </tr>
+            </thead>
 
-    <p>Paragraph 2</p>
+            <tbody>
+                <tr>
+                    <td>1.1</td>
+                    <td>Watch tutorial 1, follow along</td>
+                    <td>N/A</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
 
-    <ul>
-        <li>Name 1</li>
-        <li>Name 2</li>
-        <li>Name 3</li>
-        <li>Name 4</li>
-    </ul>
+                <tr>
+                    <td>1.2</td>
+                    <td>Deploy a website to GitHub pages</td>
+                    <td><a href="https://shihaodong1.github.io/demo-website/assignment1/demo.html">link</a></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1.3</td>
+                    <td>Deploy an assignments page (this page!)</td>
+                    <td><a href="https://shihaodong1.github.io/demo-website/index.html">link</a></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>1.4*</td>
+                    <td>Create a personal/professional homepage</td>
+                    <td>Under Construction</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>1.5</td>
+                    <td>Create two screens of your first app</td>
+                    <td>See the link above</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>1.6*</td>
+                    <td>Create a side-menu in CSS</td>
+                    <td>Couldn't get it to work</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>1.A</td>
+                    <td>What did you like this week? </td>
+                    <td colspan="4">I like the detailed video explanation. Everything makes sense and is clear to me.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>1.B</td>
+                    <td>What didn't you like this week?</td>
+                    <td colspan="4">N/A</td>
+                </tr>
+
+                <tr>
+                    <td>1.C</td>
+                    <td>How can we improve the material from this week?</td>
+                    <td colspan="4">N/A</td>
+                </tr>
+
+                <tr>
+                    <td>1.D*</td>
+                    <td>Show us anything else you coded up this week!</td>
+                    <td colspan="4">N/A</td>
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
 
 </body>
 
