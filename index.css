@@ -1,0 +1,108 @@
+body {
+  font-size: 20px;
+  margin: 0px;
+}
+
+h1,
+h2 {
+  color: blue;
+  font-family: sans-serif;
+}
+
+.top-nav {
+  color: white;
+  position: relative;
+  background-color: rgb(25, 0, 255);
+  font-family: sans-serif;
+  padding-left: 10px;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.nav-item a {
+  cursor: pointer;
+  color: white;
+}
+
+.nav-item .dropdown {
+  display: none;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+  position: absolute;
+  background-color: blue;
+  top: 42px;
+  min-width: 150px;
+}
+
+.dropdown-item {
+  position: relative;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(11, 11, 97);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1000px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 120%;
+}
+
+th {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+.side-nav-icon {
+  cursor: pointer;
+}
+
+.side-nav {
+  color: white;
+  position: absolute;
+  background-color: rgb(25, 0, 255);
+  font-family: sans-serif;
+  height: 100%;
+  min-width: 150px;
+  max-width: 250px;
+  padding-left: 10px;
+  display: none;
+}
+
+.side-nav-item {
+  position: relative;
+  padding: 0.4em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.side-nav-close-bottom {
+  position: absolute;
+  right: 0;
+  font-size: larger;
+}
+
+.side-nav-icon:hover .side-nav {
+  display: block;
+}
+
+.side-nav-close-bottom:active .side-nav {
+  display: none;
+}

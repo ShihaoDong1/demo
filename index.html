@@ -3,115 +3,7 @@
 
 <head>
     <title>Assignment 1</title>
-    <style type="text/css">
-        body {
-            font-size: 20px;
-            margin: 0px;
-        }
-
-        h1 {
-            color: blue;
-            font-family: sans-serif;
-        }
-
-        .top-nav {
-            color: white;
-            position: relative;
-            background-color: rgb(25, 0, 255);
-            font-family: sans-serif;
-            padding-left: 10px;
-        }
-
-        .nav-item {
-            position: relative;
-            display: inline-block;
-            padding: 10px;
-            font-weight: bold;
-        }
-
-        .nav-item a {
-            cursor: pointer;
-            color: white;
-        }
-
-        .nav-item .dropdown {
-            display: none;
-        }
-
-        .nav-item:hover .dropdown {
-            display: block;
-            position: absolute;
-            background-color: blue;
-            top: 42px;
-            min-width: 150px;
-        }
-
-        .dropdown-item {
-            position: relative;
-            padding: .3em;
-            cursor: pointer;
-        }
-
-        .dropdown-item:hover {
-            background-color: rgb(11, 11, 97);
-        }
-
-        .container {
-            margin: 0 auto;
-            padding: 10px;
-            max-width: 1000px;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th {
-            border: 1px solid black;
-        }
-
-        td {
-            border: 1px solid black;
-        }
-
-        .side-nav-icon {
-            cursor: pointer;
-        }
-
-        .side-nav {
-            color: white;
-            position: absolute;
-            background-color: rgb(25, 0, 255);
-            font-family: sans-serif;
-            height: 100%;
-            min-width: 150px;
-            max-width: 250px;
-            padding-left: 10px;
-            display: none;
-        }
-
-        .side-nav-item {
-            position: relative;
-            padding: .4em;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .side-nav-close-bottom {
-            position: absolute;
-            right: 0;
-            font-size: larger;
-        }
-
-        .side-nav-icon:hover .side-nav {
-            display: block;
-        }
-
-        .side-nav-close-bottom:active .side-nav {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
@@ -128,11 +20,12 @@
             <div class="dropdown">
                 <div class="dropdown-item"><a href="assignment1/demo.html">Demo</a></div>
                 <div class="dropdown-item"><a href="assignment1/Assignment1.html">Assignment 1</a></div>
+                <div class="dropdown-item"><a href="#">Assignment 2</a></div>
             </div>
         </div>
     </nav>
 
-    <nav class="side-nav">
+    <nav class=" side-nav">
         <div class="side-nav-item side-nav-close-bottom">X</div>
         <br>
         <div class="side-nav-item">Home</div>
@@ -140,14 +33,14 @@
     </nav>
 
     <div class="container">
-        <h1> Shihao's Assignment 1 </h1>
-
+        <h1> Shihao's Assignments </h1>
         <p>Full-Stack App Development 2021</p>
         <ul>
             <li>Difficulty: 1 = no problem at all, 5 = could not do</li>
             <li>Usefulness: 1 = not a good use of time, 5 = very useful</li>
         </ul>
 
+        <h2>Week 1: Builing a Website</h2>
         <table>
             <thead>
                 <tr>
@@ -237,6 +130,175 @@
                     <td>1.D*</td>
                     <td>Show us anything else you coded up this week!</td>
                     <td colspan="4">N/A</td>
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+        <h2>Week 2: Introducing Python</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</td>
+                    <th>Assignment</th>
+                    <th>Submission</th>
+                    <th>Time (hours)</th>
+                    <th>Difficult (1-5)</th>
+                    <th>Useful (1-5)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>2.1*</td>
+                    <td>Watch first 7 tutorial videos (as needed)</td>
+                    <td>N/A</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>2.2</td>
+                    <td>Watch tutorial video 2-8 (generating a simple website with Python)</td>
+                    <td>N/A</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2.3</td>
+                    <td>fizzbuzz</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>2.4</td>
+                    <td>primes</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>2.5</td>
+                    <td>prime_factorization function</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>2.6</td>
+                    <td>my_sort function</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.7</td>
+                    <td>encrypt and decrypt a text file</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.8</td>
+                    <td>Unscramble English words</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.9</td>
+                    <td>Choose your own adventure game</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.10*</td>
+                    <td>Web-based choose your own adventure game</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.11*</td>
+                    <td>Evaluate arithmetic</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.12*</td>
+                    <td>Sudoku solver</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.13*</td>
+                    <td>make change with US coins</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.14*</td>
+                    <td>Build clickable prototype of your own app, using sample data as in tutorial 2-8.</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>2.A</td>
+                    <td>What did you like this week? </td>
+                    <td colspan="4">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2.B</td>
+                    <td>What didn't you like this week?</td>
+                    <td colspan="4"></td>
+                </tr>
+
+                <tr>
+                    <td>2.C</td>
+                    <td>How can we improve the material from this week?</td>
+                    <td colspan="4"></td>
+                </tr>
+
+                <tr>
+                    <td>1.D*</td>
+                    <td>Show us anything else you coded up this week!</td>
+                    <td colspan="4"></td>
                 </tr>
 
 
