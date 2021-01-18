@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzbuzz</title>
+</head>
+
+<body>
+    <pre><code >
+        def isPrime(num):
+        primes = []
+        for possiblePrime in range(2, num+1):
+            isPrime = True
+            for x in range(2, possiblePrime):
+                if(possiblePrime % x) == 0:
+                    isPrime = False
+            if isPrime:
+                primes.append(possiblePrime)
+        return(primes)
+    
+        num = int(input("Enter a number: "))
+        print(isPrime(num))
+    </code></pre>
+</body>
+
+</html>
